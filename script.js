@@ -59,7 +59,7 @@ function render() {
   gallery.innerHTML = filtered.map(p => `
     <div class="card">
       <div class="card-img-wrap">
-        <img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy">
+        <img src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" onerror="this.src='https://via.placeholder.com/300x300/f0f0f0/999999?text=View+on+Redbubble'">
       </div>
       <div class="card-body">
         <div class="card-board">${esc(p.board)}</div>
